@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let contact of contacts">
+    {{contact.name}}
+     <ul>
+       <li *ngFor="let message of contact.messages">
+          {{message.text}} <span>{{message.date}}</span>
+       </li>
+     </ul>
+  </li>
+</ul>
