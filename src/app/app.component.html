@@ -1,18 +1,44 @@
 <!-- root component -->
 
 <div class="app">
-  <div style="position: fixed; z-index: 20; display: flex; flex-flow: row; justify-content: center; top: 0; left: 0; width: 100%;">
-    <div style="flex: 1">
-      <app-header-tabs></app-header-tabs>
+  <div class="mobile-header">
+    <div class="header-tabs">
+      <app-header-tabs [isSmsTabActive]="isSmsTabActive" (onClickSmsIcon)='onClickSmsIcon($event)'></app-header-tabs>
     </div>
-    <div style="flex: 3; background-color: white">
+    <div class="profile-header" *ngIf="!isSmsTabActive">
       <app-profile-header [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-profile-header>
     </div>
   </div>
-  <div class="contact-list">
-    <app-contacts-list [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+
+  <div class="desktop-header">
+    <div class="header-tabs">
+      <app-header-tabs [isSmsTabActive]="isSmsTabActive"></app-header-tabs>
+    </div>
+    <div class="profile-header">
+      <app-profile-header [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-profile-header>
+    </div>
   </div>
-  <div class="chat-box">
-    <app-chat-box [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
+
+  <div class="mobile-contact-chat-box">
+    <div class="contact-list" *ngIf="isSmsTabActive;else activeChatBox">
+      <app-contacts-list [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+    </div>
+    <ng-template #activeChatBox>
+      <div class="chat-box">
+        <app-chat-box [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
+      </div>
+    </ng-template>
+
   </div>
+
+  <div class="desktop-contact-chat-box">
+    <div class="contact-list">
+      <app-contacts-list [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+    </div>
+    <div class="chat-box">
+      <app-chat-box [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
+    </div>
+  </div>
+
+
 </div>

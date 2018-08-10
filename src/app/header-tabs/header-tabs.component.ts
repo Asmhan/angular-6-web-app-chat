@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input ,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header-tabs',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-tabs.component.css']
 })
 export class HeaderTabsComponent implements OnInit {
+  @Input() isSmsTabActive: boolean;
+  @Output() onClickSmsIcon = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  onSmsIconClicked(): void {
+    this.onClickSmsIcon.emit();
+  }
 }

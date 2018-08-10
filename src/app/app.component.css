@@ -1,8 +1,22 @@
 .app {
   width: 100%;
   display: flex;
+  flex-flow: column;
 }
 
+.mobile-header {
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.desktop-header {
+  display: none;
+}
 .contact-list {
   flex: 1;
   position: relative;
@@ -11,5 +25,43 @@
 .chat-box {
   flex: 3;
   background: #f2f1f2;
+}
+.header-tabs {
+  flex: 1;
+}
+.profile-header {
+  flex: 3;
+  background-color: white;
+}
+.mobile-contact-chat-box {
+  display: block;
+}
+.desktop-contact-chat-box {
+  display: none;
+}
 
+@media only screen and (min-width: 786px) {
+  .desktop-header {
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .mobile-header {
+    display: none;
+  }
+  .app {
+    flex-flow: row;
+  }
+  .mobile-contact-chat-box {
+    display: none;
+  }
+  .desktop-contact-chat-box {
+    display: flex;
+    width: 100%;
+  }
 }

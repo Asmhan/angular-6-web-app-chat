@@ -12,7 +12,6 @@ export class ContactsListComponent{
   @Output() onSelect = new EventEmitter();
 
   onSelected(contact: Contact): void {
-    // this.selectedContact = contact;
     this.onSelect.emit(contact);
   }
 

@@ -1,11 +1,15 @@
 <div class="contacts-header-icons-container">
-  <div class="icon-item" style="background-color: #5cbeb3; border: none;">
-    <i class="material-icons" style="font-size: 30px; color: white;">sms</i>
+  <div class="icon-item-tab"
+       (click)="onSmsIconClicked()"
+       [style.background-color]="isSmsTabActive ?'#5cbeb3' : '#e6e7e7'"
+       [style.border]="isSmsTabActive ? 'none' : '1px solid #dfe2e2'">
+
+    <i class="material-icons icon-item" [style.color]="isSmsTabActive ? 'white' : '#939495'">sms</i>
   </div>
-  <div class="icon-item" style="background-color: #e6e7e7">
-    <i class="material-icons" style="font-size: 30px; color: #939495;">person</i>
+  <div class="icon-item-tab">
+    <i class="material-icons icon-item">person</i>
   </div>
-  <div class="icon-item" style="background-color: #e6e7e7">
-    <i class="material-icons" style="font-size: 30px; color: #939495;">search</i>
+  <div class="icon-item-tab">
+    <i class="material-icons icon-item">search</i>
   </div>
 </div>

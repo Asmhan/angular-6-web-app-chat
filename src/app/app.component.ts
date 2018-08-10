@@ -11,7 +11,7 @@ export class AppComponent {
   selectedContact: Contact;
   contacts: Contact[];
   defaultSelectedContact: Contact;
-
+  isSmsTabActive: boolean = true;
   constructor(private contactService: ContactService) { }
 
   ngOnInit() {
@@ -22,8 +22,11 @@ export class AppComponent {
   onSelect(contact: Contact): void {
     this.selectedContact = contact;
     this.contactService.onSelectContact(contact);
+    this.isSmsTabActive = false;
   }
-
+  onClickSmsIcon(){
+    this.isSmsTabActive = true;
+  }
   getContacts(): void {
     this.contactService.getContacts()
         .subscribe(contacts => this.contacts = contacts);
