@@ -11,6 +11,9 @@ import { ContactItemComponent } from './contact-item/contact-item.component';
 import {SummaryPipe} from './summary.pipe';
 import { HeaderTabsComponent } from './header-tabs/header-tabs.component';
 import { ProfileHeaderComponent } from './profile-header/profile-header.component';
+import { AddFormInputComponent } from './add-form-input/add-form-input.component';
+import { SentMessageComponent } from './sent-message/sent-message.component';
+import { ReceivedMessageComponent } from './received-message/received-message.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ProfileHeaderComponent } from './profile-header/profile-header.componen
     ContactItemComponent,
     SummaryPipe,
     HeaderTabsComponent,
-    ProfileHeaderComponent
+    ProfileHeaderComponent,
+    AddFormInputComponent,
+    SentMessageComponent,
+    ReceivedMessageComponent
   ],
   imports: [
     BrowserModule,

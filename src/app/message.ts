@@ -5,6 +5,7 @@ export class Message {
   text: string;
   date: string;
   isFirstMessageInGroup: boolean;
+  isLastMessageInGroup: boolean;
   isSender: boolean;
   isOpened: boolean;
 }

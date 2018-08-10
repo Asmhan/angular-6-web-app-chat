@@ -12,6 +12,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:20 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: true,
    },
@@ -21,6 +22,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -28,6 +30,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -35,6 +38,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -42,6 +46,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:20 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      }]
@@ -57,6 +62,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:25 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: false,
    },
@@ -66,6 +72,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -73,6 +80,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -80,6 +88,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: false,
      },{
@@ -87,6 +96,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:25 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: false,
      }]
@@ -102,6 +112,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:23 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: true,
    },
@@ -111,6 +122,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -118,6 +130,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -125,6 +138,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -132,6 +146,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:23 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      }]
@@ -147,6 +162,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:28 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: true,
    },
@@ -156,6 +172,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -163,6 +180,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -170,6 +188,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -177,6 +196,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:28 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      }]
@@ -192,6 +212,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:30 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: true,
    },
@@ -201,6 +222,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -208,6 +230,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -215,6 +238,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -222,6 +246,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:30 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      }]
@@ -237,6 +262,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:14 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: false,
    },
@@ -246,6 +272,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -253,6 +280,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -260,6 +288,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -267,6 +296,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:14 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: false,
      }]
@@ -282,6 +312,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:35 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: true,
    },
@@ -291,6 +322,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -298,6 +330,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -305,6 +338,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -312,6 +346,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:35 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: false,
      }]
@@ -327,6 +362,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:20 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: true,
    },
@@ -336,6 +372,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -343,6 +380,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -350,6 +388,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -357,6 +396,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:20 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      }]
@@ -372,6 +412,7 @@ export const CONTACTS: Contact[] = [
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:13 AM',
      isFirstMessageInGroup: true,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: true,
    },
@@ -381,6 +422,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -388,6 +430,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -395,6 +438,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -402,6 +446,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:13 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      }]
@@ -411,12 +456,13 @@ export const CONTACTS: Contact[] = [
    name: 'Tornado',
    image: '../assets/5.jpg',
    isOnline: false,
-   unReadCount: 1,
+   unReadCount: 2,
    lastMessage: {
-     id: 2014,
+     id: 2015,
      text: 'So how is the design challenge coming along bro? Made any progress so far?',
      date: '12:40 AM',
-     isFirstMessageInGroup: true,
+     isFirstMessageInGroup: false,
+     isLastMessageInGroup: true,
      isSender: true,
      isOpened: false,
    },
@@ -426,6 +472,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:00 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: true,
      },{
@@ -433,6 +480,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:05 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
        isSender: false,
        isOpened: true,
      },{
@@ -440,6 +488,7 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:15 AM',
        isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: false,
        isOpened: true,
      },{
@@ -447,6 +496,15 @@ export const CONTACTS: Contact[] = [
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
        date: '12:40 AM',
        isFirstMessageInGroup: true,
+       isLastMessageInGroup: false,
+       isSender: true,
+       isOpened: false,
+     },{
+       id: 2015,
+       text: 'So how is the design challenge coming along bro? Made any progress so far?',
+       date: '12:40 AM',
+       isFirstMessageInGroup: false,
+       isLastMessageInGroup: true,
        isSender: true,
        isOpened: false,
      }]

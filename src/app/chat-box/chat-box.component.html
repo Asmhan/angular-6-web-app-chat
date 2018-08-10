@@ -1,6 +1,20 @@
-<!-- <p *ngIf="selectedContact; else defaultContact">
-  <img [src]="selectedContact.image" alt="" width="70" height="70" style="border-radius: 35px">{{selectedContact.name}}
-</p>
+<div class="chat-box" *ngIf="selectedContact;else defaultContact">
+  <div *ngFor="let message of selectedContact.messages">
+    <app-sent-message [message]="message" *ngIf="!message.isSender; else bySender"></app-sent-message>
+    <ng-template #bySender>
+      <app-received-message [message]="message"></app-received-message>
+    </ng-template>
+  </div>
+</div>
+
 <ng-template #defaultContact>
-  <img [src]="defaultSelectedContact.image" alt="" width="100" height="100"> <span>{{defaultSelectedContact.name}}</span>
-</ng-template> -->
+  <div class="chat-box">
+    <div *ngFor="let message of defaultSelectedContact.messages">
+      <app-sent-message [message]="message" *ngIf="!message.isSender; else bySender"></app-sent-message>
+      <ng-template #bySender>
+        <app-received-message [message]="message"></app-received-message>
+      </ng-template>
+    </div>
+  </div>
+</ng-template>
+<app-add-form-input></app-add-form-input>
