@@ -1,5 +1,18 @@
 <!-- root component -->
 
 <div class="app">
-  <app-contacts-list [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+  <div style="position: fixed; z-index: 20; display: flex; flex-flow: row; justify-content: center; top: 0; left: 0; width: 100%;">
+    <div style="flex: 1">
+      <app-header-tabs></app-header-tabs>
+    </div>
+    <div style="flex: 3; background-color: white">
+      <app-profile-header [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-profile-header>
+    </div>
+  </div>
+  <div class="contact-list">
+    <app-contacts-list [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+  </div>
+  <div class="chat-box">
+    <!-- <app-chat-box [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box> -->
+  </div>
 </div>

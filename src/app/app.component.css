@@ -2,3 +2,14 @@
   width: 100%;
   display: flex;
 }
+
+.contact-list {
+  flex: 1;
+  position: relative;
+}
+
+.chat-box {
+  flex: 3;
+  background: #f2f1f2;
+
+}

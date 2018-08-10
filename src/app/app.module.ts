@@ -9,6 +9,8 @@ import { ContactItemComponent } from './contact-item/contact-item.component';
 
 // import pipes
 import {SummaryPipe} from './summary.pipe';
+import { HeaderTabsComponent } from './header-tabs/header-tabs.component';
+import { ProfileHeaderComponent } from './profile-header/profile-header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {SummaryPipe} from './summary.pipe';
     ContactsListComponent,
     ChatBoxComponent,
     ContactItemComponent,
-    SummaryPipe
+    SummaryPipe,
+    HeaderTabsComponent,
+    ProfileHeaderComponent
   ],
   imports: [
     BrowserModule,

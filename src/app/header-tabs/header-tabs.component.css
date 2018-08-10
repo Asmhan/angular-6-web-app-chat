@@ -1,0 +1,14 @@
+.contacts-header-icons-container {
+  display: flex;
+  flex: 1;
+  background-color: #e6e7e7;
+}
+
+.icon-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #dfe2e2;
+}
