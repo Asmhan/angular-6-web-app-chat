@@ -1,2 +1,5 @@
 <!-- root component -->
-<app-contacts-list [contacts]="contacts"></app-contacts-list>
+
+<div class="app">
+  <app-contacts-list [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+</div>

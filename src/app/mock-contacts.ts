@@ -6,6 +6,15 @@ export const CONTACTS: Contact[] = [
    name: 'Mr. Nice',
    image: '../assets/1.jpg',
    isOnline: true,
+   unReadCount: 0,
+   lastMessage: {
+     id: 1114,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:20 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: true,
+   },
    messages: [
      {
        id: 1111,
@@ -34,7 +43,7 @@ export const CONTACTS: Contact[] = [
        date: '12:20 AM',
        isFirstMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -42,6 +51,15 @@ export const CONTACTS: Contact[] = [
    name: 'Narco',
    image: '../assets/2.jpg',
    isOnline: false,
+   unReadCount: 2,
+   lastMessage: {
+     id: 1314,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:25 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: false,
+   },
    messages: [
      {
        id: 1211,
@@ -63,11 +81,11 @@ export const CONTACTS: Contact[] = [
        date: '12:15 AM',
        isFirstMessageInGroup: false,
        isSender: false,
-       isOpened: true,
+       isOpened: false,
      },{
        id: 1314,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:25 AM',
        isFirstMessageInGroup: true,
        isSender: true,
        isOpened: false,
@@ -78,6 +96,15 @@ export const CONTACTS: Contact[] = [
    name: 'Bombasto',
    image: '../assets/3.jpg',
    isOnline: true,
+   unReadCount: 0,
+   lastMessage: {
+     id: 1314,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:23 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: true,
+   },
    messages: [
      {
        id: 1311,
@@ -103,10 +130,10 @@ export const CONTACTS: Contact[] = [
      },{
        id: 1314,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:23 AM',
        isFirstMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -114,6 +141,15 @@ export const CONTACTS: Contact[] = [
    name: 'Celeritas',
    image: '../assets/4.jpg',
    isOnline: false,
+   unReadCount: 0,
+   lastMessage: {
+     id: 1414,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:28 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: true,
+   },
    messages: [
      {
        id: 1411,
@@ -139,10 +175,10 @@ export const CONTACTS: Contact[] = [
      },{
        id: 1414,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:28 AM',
        isFirstMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -150,6 +186,15 @@ export const CONTACTS: Contact[] = [
    name: 'Magneta',
    image: '../assets/5.jpg',
    isOnline: true,
+   unReadCount: 0,
+   lastMessage: {
+     id: 1514,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:30 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: true,
+   },
    messages: [
      {
        id: 1511,
@@ -175,10 +220,10 @@ export const CONTACTS: Contact[] = [
      },{
        id: 1514,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:30 AM',
        isFirstMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -186,6 +231,15 @@ export const CONTACTS: Contact[] = [
    name: 'RubberMan',
    image: '../assets/1.jpg',
    isOnline: true,
+   unReadCount: 1,
+   lastMessage: {
+     id: 1614,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:14 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: false,
+   },
    messages: [
      {
        id: 1611,
@@ -211,7 +265,7 @@ export const CONTACTS: Contact[] = [
      },{
        id: 1614,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:14 AM',
        isFirstMessageInGroup: true,
        isSender: true,
        isOpened: false,
@@ -222,6 +276,15 @@ export const CONTACTS: Contact[] = [
    name: 'Dynama',
    image: '../assets/2.jpg',
    isOnline: false,
+   unReadCount: 0,
+   lastMessage: {
+     id: 1714,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:35 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: true,
+   },
    messages: [
      {
        id: 1711,
@@ -247,7 +310,7 @@ export const CONTACTS: Contact[] = [
      },{
        id: 1714,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:35 AM',
        isFirstMessageInGroup: true,
        isSender: true,
        isOpened: false,
@@ -258,6 +321,15 @@ export const CONTACTS: Contact[] = [
    name: 'Dr IQ',
    image: '../assets/3.jpg',
    isOnline: false,
+   unReadCount: 0,
+   lastMessage: {
+     id: 1814,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:20 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: true,
+   },
    messages: [
      {
        id: 1811,
@@ -286,7 +358,7 @@ export const CONTACTS: Contact[] = [
        date: '12:20 AM',
        isFirstMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -294,6 +366,15 @@ export const CONTACTS: Contact[] = [
    name: 'Magma',
    image: '../assets/4.jpg',
    isOnline: true,
+   unReadCount: 0,
+   lastMessage: {
+     id: 1914,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:13 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: true,
+   },
    messages: [
      {
        id: 1911,
@@ -319,10 +400,10 @@ export const CONTACTS: Contact[] = [
      },{
        id: 1914,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:13 AM',
        isFirstMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -330,6 +411,15 @@ export const CONTACTS: Contact[] = [
    name: 'Tornado',
    image: '../assets/5.jpg',
    isOnline: false,
+   unReadCount: 1,
+   lastMessage: {
+     id: 2014,
+     text: 'So how is the design challenge coming along bro? Made any progress so far?',
+     date: '12:40 AM',
+     isFirstMessageInGroup: true,
+     isSender: true,
+     isOpened: false,
+   },
    messages: [
      {
        id: 2011,
@@ -355,7 +445,7 @@ export const CONTACTS: Contact[] = [
      },{
        id: 2014,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
-       date: '12:20 AM',
+       date: '12:40 AM',
        isFirstMessageInGroup: true,
        isSender: true,
        isOpened: false,

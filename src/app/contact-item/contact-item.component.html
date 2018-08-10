@@ -1,0 +1,28 @@
+<li [style.background-color]="isSelectedContact()? '#f7f7f7' : 'white'">
+  <div class="contact-item-image-and-online-state-container">
+    <div class="contact-item-image-and-online-state">
+      <div class="online-state-circle" [style.background-color]="contact.isOnline? '#4ab18d': '#db6271'"></div>
+      <img [src]="contact.image" alt="person-image" width="40px" height="40px" class="contact-item-image">
+    </div>
+  </div>
+  <div class="contact-text-data-container" style="">
+    <div class="contact-item-date-container">
+      {{contact.lastMessage.date}}
+    </div>
+    <div class="contact-name-last-message-unread-data-container">
+      <div class="contact-name-and-last-message-container">
+        <div class="contact-name">
+          {{contact.name | uppercase}}
+        </div>
+        <div class="last-meesage-text">
+          {{contact.lastMessage.text}}
+        </div>
+      </div>
+      <div class="un-read-messages-count-container">
+        <div *ngIf="!contact.lastMessage.isOpened" class="un-read-messages-count">
+          {{contact.unReadCount}}
+        </div>
+      </div>
+    </div>
+  </div>
+</li>

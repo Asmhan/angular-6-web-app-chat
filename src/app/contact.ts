@@ -7,5 +7,7 @@ export class Contact {
   name: string;
   image: string;
   isOnline: boolean;
+  unReadCount: number;
   messages: Message[];
+  lastMessage: Message;
 }

@@ -9,17 +9,19 @@ import {ContactService} from './contact.service';
 })
 export class AppComponent {
   selectedContact: Contact;
-
   contacts: Contact[];
+  defaultSelectedContact: Contact;
 
   constructor(private contactService: ContactService) { }
 
   ngOnInit() {
     this.getContacts();
+    this.defaultSelectedContact = this.contacts[0]
   }
 
   onSelect(contact: Contact): void {
     this.selectedContact = contact;
+    this.contactService.onSelectContact(contact);
   }
 
   getContacts(): void {

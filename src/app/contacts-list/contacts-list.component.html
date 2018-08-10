@@ -1,5 +1,5 @@
-<ul>
-  <li *ngFor="let contact of contacts">
+<!-- <ul>
+  <li *ngFor="let contact of contacts" (click)="onSelected(contact)">
     {{contact.name}}
      <ul>
        <li *ngFor="let message of contact.messages">
@@ -7,4 +7,10 @@
        </li>
      </ul>
   </li>
-</ul>
+</ul> -->
+
+<div class="contact-list">
+   <ul>
+     <app-contact-item *ngFor="let contact of contacts" (click)="onSelected(contact)" [contact]="contact" [selectedContact]="selectedContact"></app-contact-item>
+   </ul>
+</div>
