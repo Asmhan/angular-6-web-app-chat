@@ -21,11 +21,11 @@
 
   <div class="mobile-contact-chat-box">
     <div class="contact-list" *ngIf="isSmsTabActive;else activeChatBox">
-      <app-contacts-list style="flex:1; height: 100vh; overflow: scroll" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+      <app-contacts-list style="flex:1; height: 100vh; overflow-y: scroll" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
     </div>
     <ng-template #activeChatBox>
       <div class="chat-box">
-        <app-chat-box style="flex:1; height: 100vh; overflow: scroll"  [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
+        <app-chat-box style="flex:1; height: 100vh; overflow-y: scroll"  [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
         <app-add-form-input></app-add-form-input>
       </div>
     </ng-template>
@@ -34,10 +34,10 @@
 
   <div class="desktop-contact-chat-box">
     <div class="contact-list">
-      <app-contacts-list style="flex:1; height: 100vh; overflow: scroll" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+      <app-contacts-list style="flex:1; height: 100vh; overflow-y: scroll" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
     </div>
     <div class="chat-box">
-      <app-chat-box style="flex:1; height: 100vh; overflow: scroll" [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
+      <app-chat-box style="flex:1; height: 100vh; overflow-y: scroll" [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
       <app-add-form-input></app-add-form-input>
     </div>
   </div>
