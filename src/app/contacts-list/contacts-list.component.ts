@@ -6,7 +6,11 @@ import {
   state,
   style,
   animate,
-  transition
+  transition,
+  query,
+  stagger,
+  keyframes
+
 } from '@angular/animations';
 
 @Component({
@@ -15,14 +19,15 @@ import {
   styleUrls: ['./contacts-list.component.css'],
   animations: [
     trigger('flyInOut', [
-      state('in', style({transform: 'translateX(0)'})),
-      transition('void => *', [
-        style({transform: 'translateX(100%)'}),
-        animate(200)
-      ]),
-      transition('* => void', [
-        animate(200, style({transform: 'translateX(-100%)'}))
-      ])
+          transition('* => *', [
+           query('.first-li', style({ opacity: 0 }), { optional: true }),
+           query('.first-li', stagger('500ms', [
+             animate('1s ease-in', keyframes([
+               style({ opacity: 0, transform: 'translateX(-75%)', offset: 0 }),
+               style({ opacity: .5, transform: 'translateX(35px)', offset: 0.3 }),
+               style({ opacity: 1, transform: 'translateX(0)', offset: 1.0 }),
+             ]))]), { optional: true })
+          ])
     ])
   ]
 })

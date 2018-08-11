@@ -1,8 +1,16 @@
-<li [style.background-color]="isSelectedContact()? '#f7f7f7' : 'white'">
+<li [class]="isFirstChild ? 'first-li' : 'any-li'"
+    [style.background-color]="isSelectedContact()? '#f7f7f7' : 'white'">
+
   <div class="contact-item-image-and-online-state-container">
     <div class="contact-item-image-and-online-state">
-      <div class="online-state-circle" [style.background-color]="contact.isOnline? '#4ab18d': '#db6271'"></div>
-      <img [src]="contact.image" alt="person-image" width="40px" height="40px" class="contact-item-image">
+      <div class="online-state-circle"
+           [style.background-color]="contact.isOnline? '#4ab18d': '#db6271'">
+      </div>
+      <img [src]="contact.image"
+           alt="person-image"
+           width="40px"
+           height="40px"
+           class="contact-item-image">
     </div>
   </div>
   <div class="contact-text-data-container" style="">

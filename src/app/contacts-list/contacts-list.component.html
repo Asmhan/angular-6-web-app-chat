@@ -1,5 +1,11 @@
 <div class="contact-list">
    <ul>
-     <app-contact-item *ngFor="let contact of contacts" [@flyInOut]="'in'" (click)="onSelected(contact)" [contact]="contact" [selectedContact]="selectedContact"></app-contact-item>
+     <app-contact-item *ngFor="let contact of contacts; let i = index"
+                       [isFirstChild]="i==0"
+                       [@flyInOut]="contact.messages.length"
+                       (click)="onSelected(contact)"
+                       [contact]="contact"
+                       [selectedContact]="selectedContact">
+    </app-contact-item>
    </ul>
 </div>
