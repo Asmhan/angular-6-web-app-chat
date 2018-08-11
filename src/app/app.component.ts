@@ -16,7 +16,9 @@ export class AppComponent {
 
   ngOnInit() {
     this.getContacts();
-    this.defaultSelectedContact = this.contacts[0]
+    this.defaultSelectedContact = this.contacts[0];
+    this.defaultSelectedContact.messages.push(...this.defaultSelectedContact.messages)
+    this.defaultSelectedContact.messages.push(...this.defaultSelectedContact.messages)
   }
 
   onSelect(contact: Contact): void {

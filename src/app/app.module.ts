@@ -15,6 +15,9 @@ import { AddFormInputComponent } from './add-form-input/add-form-input.component
 import { SentMessageComponent } from './sent-message/sent-message.component';
 import { ReceivedMessageComponent } from './received-message/received-message.component';
 
+//import animation module
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,8 @@ import { ReceivedMessageComponent } from './received-message/received-message.co
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
