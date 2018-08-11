@@ -26,7 +26,7 @@
     <ng-template #activeChatBox>
       <div class="chat-box scrollable-container">
         <app-chat-box class="scrollable" [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
-        <app-add-form-input></app-add-form-input>
+        <app-add-form-input [message]="message" (onSendMessage)="onSendMessage($event)"></app-add-form-input>
       </div>
     </ng-template>
 
@@ -38,7 +38,7 @@
     </div>
     <div class="chat-box scrollable-container">
       <app-chat-box class="scrollable" [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>
-      <app-add-form-input></app-add-form-input>
+      <app-add-form-input  [message]="message" (onSendMessage)="onSendMessage($event)"></app-add-form-input>
     </div>
   </div>
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Contact} from './contact';
 import {Notification} from './notification';
+import {Message} from './message';
 import {ContactService} from './contact.service';
 
 @Component({
@@ -14,6 +15,7 @@ export class AppComponent {
   notification: Notification;
   defaultSelectedContact: Contact;
   activeTab: string = 'sms';
+  message: string = '';
 
   constructor(private contactService: ContactService) { }
 
@@ -43,6 +45,14 @@ export class AppComponent {
     this.selectedContact = contact;
     this.contactService.onSelectContact(contact);
     this.activeTab = 'chat-box';
+  }
+  onSendMessage(message: Message): void{
+    if (!this.selectedContact){
+      this.contactService.addMessage(message, this.defaultSelectedContact);
+    }else {
+      this.contactService.addMessage(message, this.selectedContact);
+    }
+    this.message = '';
   }
   onClickSmsIcon(){
     this.activeTab = 'sms';

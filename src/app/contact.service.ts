@@ -31,6 +31,10 @@ export class ContactService {
   getNotification(): Observable<Notification> {
     return of(this.notification);
   }
+  addMessage(message: Message, contact: Contact){
+    let indexOfContact = this.contacts.indexOf(contact);
+    this.contacts[indexOfContact].messages.push(message);
+  }
   onReceiveNewMessage(indexOfContact: number, message: Message){
     let contactData = this.contacts[indexOfContact];
     this.contacts.splice(indexOfContact, 1);
