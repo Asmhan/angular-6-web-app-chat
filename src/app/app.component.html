@@ -12,7 +12,7 @@
 
   <div class="desktop-header">
     <div class="header-tabs">
-      <app-header-tabs [isSmsTabActive]="isSmsTabActive"></app-header-tabs>
+      <app-header-tabs [isSmsTabActive]="isSmsTabActive" (onClickSmsIcon)='onClickSmsIcon($event)'></app-header-tabs>
     </div>
     <div class="profile-header">
       <app-profile-header [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-profile-header>

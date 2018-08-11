@@ -1,5 +1,5 @@
 <div class="right-speech-bubble-and-date" *ngIf="!message.isSender; else bySender">
-  <span *ngIf="message.isLastMessageInGroup" class="date">{{message.date}}</span>
+  <span *ngIf="message.isLastMessageInGroup" class="date date-order">{{message.date}}</span>
   <div class="speech-bubble" *ngIf="message.isFirstMessageInGroup; else normalMessage">
     {{message.text}}
   </div>

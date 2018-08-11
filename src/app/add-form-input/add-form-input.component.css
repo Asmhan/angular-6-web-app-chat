@@ -1,0 +1,16 @@
+.add-form-input-container {
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 786px) {
+  .add-form-input-container {
+    width: 75%;
+  }
+}

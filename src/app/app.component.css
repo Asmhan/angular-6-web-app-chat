@@ -20,6 +20,10 @@
 .contact-list {
   flex: 1;
   position: relative;
+  padding-bottom: 0;
+  background-color: white;
+  height: 100%;
+  margin-bottom: 0;
 }
 
 .chat-box {
