@@ -7,7 +7,10 @@
       <input type="text" name="message" [(ngModel)]="message" placeholder="Type your message" style="height: 40px; width: 100%; border-radius: 5px;border: none; padding: 0 20px;">
     </div>
     <div class="" style="flex: 2; display: flex; align-items: center; justify-content: center">
-      <button type="button" name="button" (click)="sendMessage()" style="color: white; background-color: #5cbeb3; height: 40px; padding: 0px 30px; border-radius: 5px; border: none;">Send</button>
+      <button class="send-button" type="button" name="button" (click)="sendMessage()">Send</button>
+      <div class="send-icon-container">
+        <i class="material-icons send-icon" (click)="sendMessage()">send</i>
+      </div>
     </div>
   </div>
 </div>
