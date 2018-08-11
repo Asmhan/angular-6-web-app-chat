@@ -23,6 +23,7 @@ export class ContactService {
     // get index of contact and find this contact data and save in contactData variable
     let indexOfContact = this.contacts.indexOf(contact);
     let contactData = this.contacts[indexOfContact];
+    contactData.lastMessage.isOpened = true;
     // delete contact element from contacts array
     this.contacts.splice(indexOfContact, 1);
     // after 500 ms add on the 0 index of contacts array
@@ -40,6 +41,7 @@ export class ContactService {
     this.contacts.splice(indexOfContact, 1);
     contactData.messages.push(message);
     contactData.lastMessage = message;
+    contactData.unReadCount = 1;
     this.notification = {
       name: contactData.name,
       message: message.text

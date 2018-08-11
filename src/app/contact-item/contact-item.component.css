@@ -48,9 +48,13 @@ li{
 .contact-name-and-last-message-container {
   flex: 7;
 }
+.contact-name {
+  color: #606060;
+}
 .last-meesage-text {
-  color: #5cbeb3;
+  /* color: #5cbeb3; */
   font-size: 12px;
+  color: #949495;
 }
 
 .un-read-messages-count-container {

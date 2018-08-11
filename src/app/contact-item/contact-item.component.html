@@ -19,10 +19,10 @@
     </div>
     <div class="contact-name-last-message-unread-data-container">
       <div class="contact-name-and-last-message-container">
-        <div class="contact-name">
+        <div class="contact-name" [style.color]="isSelectedContact()? '#5cbeb3': '#606060'">
           {{contact.name | uppercase}}
         </div>
-        <div class="last-meesage-text">
+        <div class="last-meesage-text" [style.color]="!contact.lastMessage.isOpened ? '#5cbeb3' : '##949495'">
           {{contact.lastMessage.text | summary}}
         </div>
       </div>

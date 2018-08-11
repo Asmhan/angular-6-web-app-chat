@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {Contact} from '../contact';
 
 @Component({
@@ -6,16 +6,19 @@ import {Contact} from '../contact';
   templateUrl: './contact-item.component.html',
   styleUrls: ['./contact-item.component.css']
 })
-export class ContactItemComponent implements OnInit {
+export class ContactItemComponent{
   @Input() contact: Contact;
   @Input() selectedContact: Contact;
   @Input() isFirstChild: Boolean;
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input() defaultSelectedContact: Contact;
 
   isSelectedContact (){
-    return this.contact == this.selectedContact;
+    if (this.contact == this.selectedContact){
+      return true;
+    }
+    if (!this.selectedContact && this.defaultSelectedContact == this.contact){
+      return true;
+    }
+    return false;
   }
 }

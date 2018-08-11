@@ -64,7 +64,7 @@ export const CONTACTS: Contact[] = [
      isFirstMessageInGroup: true,
      isLastMessageInGroup: true,
      isSender: true,
-     isOpened: false,
+     isOpened: true,
    },
    messages: [
      {
@@ -90,7 +90,7 @@ export const CONTACTS: Contact[] = [
        isFirstMessageInGroup: false,
        isLastMessageInGroup: true,
        isSender: false,
-       isOpened: false,
+       isOpened: true,
      },{
        id: 1314,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
@@ -98,7 +98,7 @@ export const CONTACTS: Contact[] = [
        isFirstMessageInGroup: true,
        isLastMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -264,7 +264,7 @@ export const CONTACTS: Contact[] = [
      isFirstMessageInGroup: true,
      isLastMessageInGroup: true,
      isSender: true,
-     isOpened: false,
+     isOpened: true,
    },
    messages: [
      {
@@ -298,7 +298,7 @@ export const CONTACTS: Contact[] = [
        isFirstMessageInGroup: true,
        isLastMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -348,7 +348,7 @@ export const CONTACTS: Contact[] = [
        isFirstMessageInGroup: true,
        isLastMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  },
  {
@@ -464,7 +464,7 @@ export const CONTACTS: Contact[] = [
      isFirstMessageInGroup: false,
      isLastMessageInGroup: true,
      isSender: true,
-     isOpened: false,
+     isOpened: true,
    },
    messages: [
      {
@@ -498,7 +498,7 @@ export const CONTACTS: Contact[] = [
        isFirstMessageInGroup: true,
        isLastMessageInGroup: false,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      },{
        id: 2015,
        text: 'So how is the design challenge coming along bro? Made any progress so far?',
@@ -506,7 +506,7 @@ export const CONTACTS: Contact[] = [
        isFirstMessageInGroup: false,
        isLastMessageInGroup: true,
        isSender: true,
-       isOpened: false,
+       isOpened: true,
      }]
  }
 ]

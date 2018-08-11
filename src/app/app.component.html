@@ -21,7 +21,7 @@
 
   <div class="mobile-contact-chat-box">
     <div class="contact-list scrollable-container" *ngIf="activeTab == 'sms' || activeTab == 'search' ;else activeChatBox">
-      <app-contacts-list [activeTab]="activeTab" class="scrollable" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+      <app-contacts-list [defaultSelectedContact]="defaultSelectedContact" [activeTab]="activeTab" class="scrollable" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
     </div>
     <ng-template #activeChatBox>
       <div class="chat-box scrollable-container">
@@ -34,7 +34,7 @@
 
   <div class="desktop-contact-chat-box">
     <div class="contact-list scrollable-container">
-      <app-contacts-list [activeTab]="activeTab" class="scrollable" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
+      <app-contacts-list [defaultSelectedContact]="defaultSelectedContact" [activeTab]="activeTab" class="scrollable" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
     </div>
     <div class="chat-box scrollable-container">
       <app-chat-box class="scrollable" [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-chat-box>

@@ -35,6 +35,7 @@ import {
 export class ContactsListComponent{
   @Input() contacts: Contact[];
   @Input() selectedContact: Contact;
+  @Input() defaultSelectedContact: Contact;
   @Input() activeTab: string;
   @Output() onSelect = new EventEmitter();
   query:string = '';
