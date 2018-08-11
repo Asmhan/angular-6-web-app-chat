@@ -60,6 +60,8 @@
     flex-flow: row;
     justify-content: flex-end;
     align-items: center;
+    padding: 5px 40px;
+
   }
   .speech-bubble {
     max-width: 70%;

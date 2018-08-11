@@ -5,7 +5,7 @@
    <ul>
      <app-contact-item *ngFor="let contact of contacts | startsWith : query; let i = index"
                        [isFirstChild]="i==0"
-                       [@flyInOut]="contact.messages.length"
+                       [@flyInOut]="contacts[0]"
                        (click)="onSelected(contact)"
                        [contact]="contact"
                        [selectedContact]="selectedContact"
