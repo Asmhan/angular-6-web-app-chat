@@ -4,7 +4,7 @@
   <div class="contact-item-image-and-online-state-container">
     <div class="contact-item-image-and-online-state">
       <div class="online-state-circle"
-           [style.background-color]="contact.isOnline? '#4ab18d': '#db6271'">
+           [style.background-color]="contact.isOnline && contact.lastMessage.isOpened? '#4ab18d': '#db6271'">
       </div>
       <img [src]="contact.image"
            alt="person-image"

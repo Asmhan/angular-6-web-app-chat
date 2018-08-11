@@ -59,6 +59,7 @@
     flex-flow: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 5px 13px;
   }
   .left-speech-bubble {
     max-width: 70%;
