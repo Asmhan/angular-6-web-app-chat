@@ -17,8 +17,19 @@ export class AppComponent {
   ngOnInit() {
     this.getContacts();
     this.defaultSelectedContact = this.contacts[0];
-    this.defaultSelectedContact.messages.push(...this.defaultSelectedContact.messages)
-    this.defaultSelectedContact.messages.push(...this.defaultSelectedContact.messages)
+    // this.defaultSelectedContact.messages.push(...this.defaultSelectedContact.messages)
+    // this.defaultSelectedContact.messages.push(...this.defaultSelectedContact.messages)
+    setInterval(()=> {
+      this.contactService.onReceiveNewMessage(3, {
+        id: 1415,
+        text: 'Made any progress so far?',
+        date: '12:28 AM',
+        isFirstMessageInGroup: true,
+        isLastMessageInGroup: true,
+        isSender: true,
+        isOpened: false,
+      })
+    }, 30000);
   }
 
   onSelect(contact: Contact): void {

@@ -1,16 +1,5 @@
-<!-- <ul>
-  <li *ngFor="let contact of contacts" (click)="onSelected(contact)">
-    {{contact.name}}
-     <ul>
-       <li *ngFor="let message of contact.messages">
-          {{message.text}} <span>{{message.date}}</span>
-       </li>
-     </ul>
-  </li>
-</ul> -->
-
 <div class="contact-list">
    <ul>
-     <app-contact-item *ngFor="let contact of contacts" (click)="onSelected(contact)" [contact]="contact" [selectedContact]="selectedContact"></app-contact-item>
+     <app-contact-item *ngFor="let contact of contacts" [@flyInOut]="'in'" (click)="onSelected(contact)" [contact]="contact" [selectedContact]="selectedContact"></app-contact-item>
    </ul>
 </div>
