@@ -42,6 +42,7 @@ export class AppComponent {
   onSelect(contact: Contact): void {
     this.selectedContact = contact;
     this.contactService.onSelectContact(contact);
+    this.activeTab = 'chat-box';
   }
   onClickSmsIcon(){
     this.activeTab = 'sms';

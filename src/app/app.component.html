@@ -5,7 +5,7 @@
     <div class="header-tabs">
       <app-header-tabs [activeTab]="activeTab" (onClickSmsIcon)='onClickSmsIcon($event)' (onClickSearchIcon)='onClickSearchIcon($event)'></app-header-tabs>
     </div>
-    <div class="profile-header" *ngIf="activeTab == 'none'">
+    <div class="profile-header" *ngIf="activeTab == 'chat-box'">
       <app-profile-header [selectedContact]="selectedContact" [defaultSelectedContact]="defaultSelectedContact"></app-profile-header>
     </div>
   </div>
@@ -20,7 +20,7 @@
   </div>
 
   <div class="mobile-contact-chat-box">
-    <div class="contact-list scrollable-container" *ngIf="activeTab == 'sms';else activeChatBox">
+    <div class="contact-list scrollable-container" *ngIf="activeTab == 'sms' || activeTab == 'search' ;else activeChatBox">
       <app-contacts-list [activeTab]="activeTab" class="scrollable" [contacts]="contacts" (onSelect)='onSelect($event)' [selectedContact]="selectedContact"></app-contacts-list>
     </div>
     <ng-template #activeChatBox>
