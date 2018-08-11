@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 import { Contact } from './contact';
-import {Message} from './Message';
+import {Message} from './message';
+import {Notification} from './notification';
 
 import { CONTACTS } from './mock-contacts';
 
@@ -12,6 +13,8 @@ import { CONTACTS } from './mock-contacts';
 })
 export class ContactService {
   contacts: Contact[] = CONTACTS;
+  notification: Notification;
+
   getContacts(): Observable<Contact[]> {
     // return array of contacts
     return of(CONTACTS);
@@ -25,13 +28,18 @@ export class ContactService {
     // after 500 ms add on the 0 index of contacts array
     setTimeout(()=>{this.contacts.unshift(contactData)}, 700);
   }
-
+  getNotification(): Observable<Notification> {
+    return of(this.notification);
+  }
   onReceiveNewMessage(indexOfContact: number, message: Message){
     let contactData = this.contacts[indexOfContact];
     this.contacts.splice(indexOfContact, 1);
     contactData.messages.push(message);
     contactData.lastMessage = message;
-
+    this.notification = {
+      name: contactData.name,
+      message: message.text
+    }
     setTimeout(()=>{
       this.contacts.unshift(contactData);
     }, 700)

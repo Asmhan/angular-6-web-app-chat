@@ -17,6 +17,7 @@ import { ReceivedMessageComponent } from './received-message/received-message.co
 
 //import animation module
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotificationToastComponent } from './notification-toast/notification-toast.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfileHeaderComponent,
     AddFormInputComponent,
     SentMessageComponent,
-    ReceivedMessageComponent
+    ReceivedMessageComponent,
+    NotificationToastComponent
   ],
   imports: [
     BrowserModule,

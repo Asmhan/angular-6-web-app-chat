@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Contact} from './contact';
+import {Notification} from './notification';
 import {ContactService} from './contact.service';
 
 @Component({
@@ -10,6 +11,7 @@ import {ContactService} from './contact.service';
 export class AppComponent {
   selectedContact: Contact;
   contacts: Contact[];
+  notification: Notification;
   defaultSelectedContact: Contact;
   isSmsTabActive: boolean = true;
   constructor(private contactService: ContactService) { }
@@ -29,6 +31,10 @@ export class AppComponent {
         isSender: true,
         isOpened: false,
       })
+      this.getNotification();
+      setTimeout(()=>{
+        this.notification = null;
+      },5000)
     }, 30000);
   }
 
@@ -43,5 +49,9 @@ export class AppComponent {
   getContacts(): void {
     this.contactService.getContacts()
         .subscribe(contacts => this.contacts = contacts);
+  }
+  getNotification(): void {
+    this.contactService.getNotification()
+        .subscribe(notification => this.notification = notification);
   }
 }
