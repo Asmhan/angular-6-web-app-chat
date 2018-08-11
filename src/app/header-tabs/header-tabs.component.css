@@ -26,3 +26,11 @@
 .icon-item:hover {
   color: white;
 }
+
+.active {
+  background-color: #5cbeb3;
+  border: none;
+}
+.active-icon {
+  color: white;
+}

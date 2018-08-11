@@ -1,5 +1,6 @@
 import { Component, Input, EventEmitter, Output } from '@angular/core';
 import {Contact} from '../contact';
+import {StartsWithPipe} from '../customstart.pipes';
 
 import {
   trigger,
@@ -34,10 +35,11 @@ import {
 export class ContactsListComponent{
   @Input() contacts: Contact[];
   @Input() selectedContact: Contact;
+  @Input() activeTab: string;
   @Output() onSelect = new EventEmitter();
+  query:string = '';
 
   onSelected(contact: Contact): void {
     this.onSelect.emit(contact);
   }
-
 }

@@ -8,3 +8,11 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+input {
+  border: 1px solid #dfe2e2 !important;
+}
+input:focus {
+  border: 1px solid  #939495 !important;
+  outline-offset: 0px !important;
+  outline: none !important;
+}

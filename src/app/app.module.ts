@@ -9,6 +9,9 @@ import { ContactItemComponent } from './contact-item/contact-item.component';
 
 // import pipes
 import {SummaryPipe} from './summary.pipe';
+import {StartsWithPipe} from './customstart.pipes';
+
+
 import { HeaderTabsComponent } from './header-tabs/header-tabs.component';
 import { ProfileHeaderComponent } from './profile-header/profile-header.component';
 import { AddFormInputComponent } from './add-form-input/add-form-input.component';
@@ -31,7 +34,8 @@ import { NotificationToastComponent } from './notification-toast/notification-to
     AddFormInputComponent,
     SentMessageComponent,
     ReceivedMessageComponent,
-    NotificationToastComponent
+    NotificationToastComponent,
+    StartsWithPipe
   ],
   imports: [
     BrowserModule,
